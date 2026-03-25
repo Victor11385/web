@@ -18,7 +18,7 @@
 
     body {
       font-family: 'Arial', sans-serif;
-      background-image: url('../Fondo2.png');
+      background-image: url('Fondo2.png');
       background-attachment: fixed;
       background-repeat: no-repeat;
       background-size: cover;
