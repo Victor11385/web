@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fortunas Darley - 2do Sorteo</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-image: url('../Fondo2.png');
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      overflow-x: hidden;
+    }
+
+    /* Contenedor principal */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 40px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+    }
+
+    /* Secciones */
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 40px;
+    }
+
+    /* Sección 1 ocupa toda la fila */
+    #seccion1 {
+      grid-column: 1 / -1;
+    }
+
+    section h2 {
+      color: #333;
+      margin-bottom: 10px;
+      font-size: 28px;
+      text-align: center;
+    }
+
+    /* Contenedor de imágenes */
+    .images-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      width: 100%;
+    }
+
+    /* Imágenes responsivas */
+    .images-container img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      object-fit: contain;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .images-container img:hover {
+      transform: scale(1.05);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+      }
+
+      section {
+        padding: 10px 10px;
+      }
+
+      section h2 {
+        font-size: 22px;
+      }
+    }
+
+    /* HERO */
+    .hero {
+      grid-column: 1 / -1;
+    }
+
+    .hero-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: linear-gradient(90deg, #00000030, #1818188a);
+      border-radius: 20px;
+      padding: 40px;
+      color: white;
+      flex-wrap: wrap;
+      width: 100%;
+      font-family: "Poppins", sans-serif;
+    }
+
+    /* IZQUIERDA */
+    .hero-left {
+      max-width: 500px;
+    }
+
+    .logo {
+      width: 120px;
+      margin-bottom: 20px;
+    }
+
+    .label {
+      font-size: 12px;
+      color: #c9a800;
+      margin-top: 10px;
+    }
+
+    .hero-left h3 {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    .hero-left h4 {
+      font-size: 16px;
+      font-weight: normal;
+    }
+
+    /* DERECHA */
+    .hero-right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .numero {
+      background: rgba(255, 215, 0, 0.2);
+      padding: 20px 40px;
+      border-radius: 20px;
+      font-size: 48px;
+      font-weight: bold;
+      color: #fff;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+    }
+
+    /* RESPONSIVE HERO */
+    @media (max-width: 768px) {
+      .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+      }
+
+      .numero {
+        font-size: 36px;
+        padding: 15px 30px;
+      }
+
+      .logo {
+        width: 100px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- SECCIÓN 1 -->
+    <section id="seccion1" class="hero">
+      <img src="https://drive.google.com/file/d/1sdTCDDBz16I19gb8OZIYWsJCYGm2Flvt/view?usp=sharing" alt="Logo" class="logo">
+
+      <div class="hero-content">
+
+        <!-- IZQUIERDA -->
+        <div class="hero-left">
+          <p class="label">Nombre</p>
+          <h3>Lorem ipsum</h3>
+
+          <p class="label">Dirección</p>
+          <h4>Manizales - Caldas</h4>
+
+          <p class="label">Teléfono</p>
+          <h4>3002233333</h4>
+        </div>
+
+        <!-- DERECHA -->
+        <div class="hero-right">
+          <div class="numero">0000</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2 -->
+    <section id="seccion2">
+      <div class="images-container">
+        <img src="https://drive.google.com/file/d/1Kfvw4ZGQzlbkUrfvP9n70DZO7uYfDsyt/view?usp=drive_link" alt="Imagen 1">
+      </div>
+    </section>
+
+    <!-- SECCIÓN 3 -->
+    <section id="seccion3">
+      <div class="images-container">
+        <img src="sec2.png" alt="Imagen 2">
+      </div>
+    </section>
+
+    <!-- SECCIÓN 4 -->
+    <section id="seccion4">
+      <div class="images-container">
+        <img src="sec3.png" alt="Imagen 3">
+      </div>
+    </section>
+
+    <!-- SECCIÓN 5 -->
+    <section id="seccion5">
+      <div class="images-container">
+        <img src="sec4.png" alt="Imagen 4">
+      </div>
+    </section>
+
+  </div>
+
+</body>
+
+</html>
