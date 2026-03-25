@@ -183,7 +183,6 @@
 
     <!-- SECCIÓN 1 -->
     <section id="seccion1" class="hero">
-      <img src="https://drive.google.com/file/d/1sdTCDDBz16I19gb8OZIYWsJCYGm2Flvt/view?usp=sharing" alt="Logo" class="logo">
       <img src="logo.png" alt="Logo" class="logo">
 
       <div class="hero-content">
